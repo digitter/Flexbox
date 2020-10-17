@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ddd;
+}
+
+.root > div {
+  width: 300px;
+  height: 300px;
+  background: #ddd;
+  flex: 1 0 300px;
+  /*
+    flex-grow: 子要素の伸びる比率
+    flex-shrink: 0を指定して、300px以下にならないようにする
+    flex-basis: ベースとなる幅の指定
+  */
+  border: 10px solid gray;
+}
+
+.left {
+  background-color: rgb(180, 206, 206);
+}
+
+.right {
+  background-color: rgb(223, 194, 211);
+}
